@@ -12,11 +12,11 @@ Die folgenden Befehle werden in PowerShell oder einem anderen Terminal ausgefüh
 
 ## Installation
 
-1. Auf GitHub dieses Repository öffnen, auf **Code → HTTPS** klicken und die Repository-URL kopieren.
-2. In den gewünschten übergeordneten Ordner wechseln. Das Repository mit der kopierten URL klonen; `REPOSITORY-URL` ist ein Platzhalter und muss ersetzt werden:
+1. Ein Terminal im gewünschten übergeordneten Ordner öffnen.
+2. Das Repository klonen und in den Projektordner wechseln:
 
    ```sh
-   git clone REPOSITORY-URL bootstrap-sass-project
+   git clone https://github.com/LucaSteindl/aufgabe-bootstrap-sass-.git bootstrap-sass-project
    cd bootstrap-sass-project
    ```
 
@@ -42,7 +42,7 @@ Die folgenden Befehle werden in PowerShell oder einem anderen Terminal ausgefüh
 
    BrowserSync öffnet normalerweise den Browser unter `http://localhost:3000`. Falls der Port belegt ist, die im Terminal ausgegebene lokale Adresse verwenden.
 
-Das Repository wird zunächst lokal verwaltet. Der Platzhalter oben kann nach dem Hochladen durch die tatsächliche GitHub-URL ersetzt werden.
+Repository: [LucaSteindl/aufgabe-bootstrap-sass-](https://github.com/LucaSteindl/aufgabe-bootstrap-sass-)
 
 ## Entwicklung und Befehle
 
