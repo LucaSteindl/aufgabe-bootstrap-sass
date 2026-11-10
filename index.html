@@ -11,7 +11,11 @@
     <header class="container py-4">
       <nav class="d-flex flex-wrap justify-content-between align-items-center gap-3" aria-label="Hauptnavigation">
         <a class="brand" href="#start"><i class="bi bi-asterisk" aria-hidden="true"></i> Studio Orange<span class="brand-dot">.</span></a>
-        <a class="nav-link" href="#bausteine">Die Bausteine <i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
+        <div class="d-flex flex-wrap gap-4">
+          <a class="nav-link" href="#bausteine">Bausteine</a>
+          <a class="nav-link" href="#projekt">Beispielprojekt</a>
+          <a class="nav-link" href="#ablauf">Ablauf</a>
+        </div>
       </nav>
     </header>
 
@@ -44,6 +48,50 @@
           <div class="col-md-6 col-lg-4"><article class="feature"><i class="bi bi-grid-1x2 feature-icon" aria-hidden="true"></i><span class="feature-number">01</span><h3>Passt sich an.</h3><p>Auf dem Smartphone untereinander, auf großen Bildschirmen nebeneinander. Das Bootstrap-Raster hält alles in Form.</p></article></div>
           <div class="col-md-6 col-lg-4"><article class="feature"><i class="bi bi-palette feature-icon" aria-hidden="true"></i><span class="feature-number">02</span><h3>Hat Charakter.</h3><p>Ein warmer Orangeton und eigene Sass-Stile geben den vertrauten Komponenten eine persönliche Note.</p></article></div>
           <div class="col-md-6 col-lg-4"><article class="feature"><i class="bi bi-lightning-charge feature-icon" aria-hidden="true"></i><span class="feature-number">03</span><h3>Zeigt die Details.</h3><p>Klare Symbole, gut lesbare Texte und großzügige Abstände machen die Seite übersichtlich und angenehm nutzbar.</p></article></div>
+        </div>
+      </section>
+
+      <section id="projekt" class="container section-space" aria-labelledby="project-title">
+        <div class="section-heading">
+          <p class="eyebrow">EIN BEISPIEL</p>
+          <h2 id="project-title">Eine Seite für einen Kreativabend.</h2>
+        </div>
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <div class="project-preview" aria-label="Entwurf einer Veranstaltungsseite für einen Kreativabend">
+              <div class="preview-bar"><span></span><span></span><span></span><span class="preview-caption">Seitenentwurf</span></div>
+              <div class="preview-content">
+                <p class="eyebrow">ZEIT FÜR EIGENE IDEEN</p>
+                <i class="bi bi-pencil-square" aria-hidden="true"></i>
+                <h3>Skizzen, Snacks<br>und gute Ideen.</h3>
+                <p>Ein gemeinsamer Abend zum Zeichnen und Ausprobieren.</p>
+                <span class="preview-label">Kreativabend · Beispielentwurf</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 project-copy">
+            <h3>Wenig Inhalt, klar aufgeteilt.</h3>
+            <p>Für eine kleine Veranstaltung braucht es keine riesige Website. Eine kurze Vorstellung, die wichtigsten Informationen und ein gut sichtbarer Einstieg reichen oft schon aus.</p>
+            <p>Der Entwurf links zeigt, wie dieselben Farben und Schriften für ein anderes Thema eingesetzt werden können.</p>
+            <ul class="project-notes">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Eine Überschrift, die das Thema erklärt</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Kurze Texte statt langer Absätze</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Auch am Handy gut lesbar</li>
+            </ul>
+            <a class="btn btn-outline-dark mt-2" href="#ablauf">Wie entsteht so eine Seite? <i class="bi bi-arrow-down ms-2" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ablauf" class="container section-space" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">VON DER IDEE ZUR SEITE</p>
+          <h2 id="process-title">Erst überlegen, dann gestalten.</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="process-step"><span class="step-label">1. PLANEN</span><h3>Was soll auf die Seite?</h3><p>Inhalte sammeln und auf das Wesentliche kürzen. Eine grobe Skizze hilft dabei, die Reihenfolge der Abschnitte festzulegen.</p></article></div>
+          <div class="col-md-4"><article class="process-step"><span class="step-label">2. UMSETZEN</span><h3>Das Grundgerüst bauen.</h3><p>Die Inhalte in HTML einfügen, mit dem Raster anordnen und Farben sowie Abstände in Sass anpassen.</p></article></div>
+          <div class="col-md-4"><article class="process-step"><span class="step-label">3. PRÜFEN</span><h3>Auch klein muss es passen.</h3><p>Das Browserfenster verkleinern, Links anklicken und die Texte durchlesen. So fallen kleine Fehler schnell auf.</p></article></div>
         </div>
       </section>
 

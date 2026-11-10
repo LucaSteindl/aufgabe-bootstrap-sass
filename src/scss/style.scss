@@ -66,6 +66,22 @@ h1 span { color: #ad4b0a; }
 .feature p { color: #5c625b; line-height: 1.7; margin-bottom: 0; }
 .button-sample { background: #eeeae1; padding: 2rem; border-radius: 0.75rem; }
 .button-sample .eyebrow { margin-bottom: 0.7rem; }
+.project-preview { border: 1px solid #dedfd7; border-radius: 0.75rem; overflow: hidden; }
+.preview-bar { display: flex; gap: 0.35rem; align-items: center; padding: 0.8rem 1rem; background: #eeeae1; }
+.preview-bar > span:not(.preview-caption) { width: 0.45rem; height: 0.45rem; background: #a4a89c; border-radius: 50%; }
+.preview-caption { margin-left: auto; color: #5c625b; font-size: 0.7rem; }
+.preview-content { padding: 2rem; background: #f5d7b9; }
+.preview-content > .bi { display: block; font-size: 2.8rem; margin-bottom: 1rem; }
+.preview-content h3 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 750; letter-spacing: -0.04em; }
+.preview-content > p:not(.eyebrow) { max-width: 20rem; line-height: 1.7; }
+.preview-label { display: inline-block; margin-top: 1rem; border-top: 1px solid #b99570; padding-top: 0.8rem; font-size: 0.75rem; }
+.project-copy h3, .process-step h3 { font-size: 1.3rem; font-weight: 650; }
+.project-copy p, .process-step p { color: #5c625b; line-height: 1.7; }
+.project-notes { list-style: none; padding: 0; margin-top: 1.5rem; }
+.project-notes li { display: flex; gap: 0.65rem; margin-bottom: 0.7rem; }
+.project-notes .bi { color: #ad4b0a; }
+.process-step { border-top: 2px solid $primary; padding-top: 1.25rem; }
+.step-label { display: block; color: #80501c; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 1rem; }
 footer { border-top: 1px solid #d9dbd2; color: #5c625b; font-size: 0.75rem; }
 @media (max-width: 767.98px) {
   .hero { padding-top: 2rem; padding-bottom: 2rem; }
