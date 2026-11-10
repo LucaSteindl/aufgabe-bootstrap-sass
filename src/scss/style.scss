@@ -1,0 +1,76 @@
+// 1. Eigene Bootstrap-Variablen
+$primary: #ff9b51;
+
+// Die Schriftdateien werden relativ zum fertigen CSS in dist/css geladen.
+$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts";
+
+// 2. Erforderliche Bootstrap-Module
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+// Bootstrap 5.3 benoetigt zusaetzlich die Dark-Variablen und Maps.
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Nur benoetigte Komponenten einbinden.
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// 3. Bootstrap Icons
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+// Eigene Stile
+body {
+  background-color: #faf8f3;
+  color: #242922;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+a { text-underline-offset: 0.25em; }
+a:focus-visible { outline: 3px solid #80501c; outline-offset: 5px; }
+.brand { color: inherit; text-decoration: none; font-size: 1.3rem; font-weight: 750; letter-spacing: -0.04em; }
+.brand .bi, .brand-dot { color: #b34b00; }
+.brand .bi { margin-right: 0.45rem; }
+.nav-link { color: inherit; text-decoration: none; font-size: 0.9rem; }
+.nav-link:hover { text-decoration: underline; }
+.hero { padding-top: 4rem; padding-bottom: 4rem; }
+.eyebrow { font-size: 0.7rem; font-weight: 750; letter-spacing: 0.13em; margin-bottom: 1.3rem; }
+.status-dot { display: inline-block; width: 0.5rem; height: 0.5rem; background: #b34b00; border-radius: 50%; margin-right: 0.4rem; }
+h1 { font-size: clamp(2.5rem, 4.7vw, 4.5rem); font-weight: 750; line-height: 1.08; letter-spacing: -0.055em; }
+h1 span { color: #ad4b0a; }
+.hero-copy { max-width: 30rem; color: #5c625b; font-size: 1.05rem; line-height: 1.75; margin-top: 1.5rem; }
+.btn { border-radius: 0.45rem; font-weight: 600; padding: 0.7rem 1.1rem; }
+.showcase { background: #252e26; color: #fff7eb; padding: clamp(1.5rem, 3vw, 2.5rem); border-radius: 1rem; overflow: hidden; }
+.showcase-top { font-size: 0.65rem; letter-spacing: 0.13em; }
+.showcase-top .bi { font-size: 1.5rem; }
+.orbit { width: 12rem; height: 12rem; border: 1px solid #768271; border-radius: 50%; margin: 1.5rem auto; display: grid; place-items: center; position: relative; }
+.orbit > .bi { font-size: 5rem; color: $primary; transform: rotate(-10deg); }
+.orbit-star { position: absolute; right: -0.5rem; top: 0; font-size: 3rem; line-height: 1; color: $primary; }
+.showcase h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 650; letter-spacing: -0.04em; }
+.showcase .mt-4 { font-size: 0.8rem; color: #d4dbce; }
+.sample-number { white-space: nowrap; font-size: 0.65rem; letter-spacing: 0.1em; }
+.section-space { padding-top: 2.5rem; padding-bottom: 4rem; }
+.section-heading { border-top: 1px solid #d9dbd2; padding-top: 2rem; margin-bottom: 2rem; }
+.section-heading h2, .button-sample h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 650; letter-spacing: -0.04em; }
+.feature { position: relative; height: 100%; border: 1px solid #dedfd7; border-radius: 0.75rem; padding: 1.75rem; }
+.feature-icon { font-size: 1.8rem; color: #ad4b0a; }
+.feature-number { position: absolute; top: 2rem; right: 1.75rem; font-size: 0.75rem; color: #676e63; }
+.feature h3 { font-size: 1.3rem; font-weight: 650; margin-top: 1.5rem; }
+.feature p { color: #5c625b; line-height: 1.7; margin-bottom: 0; }
+.button-sample { background: #eeeae1; padding: 2rem; border-radius: 0.75rem; }
+.button-sample .eyebrow { margin-bottom: 0.7rem; }
+footer { border-top: 1px solid #d9dbd2; color: #5c625b; font-size: 0.75rem; }
+@media (max-width: 767.98px) {
+  .hero { padding-top: 2rem; padding-bottom: 2rem; }
+  .button-sample { padding: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

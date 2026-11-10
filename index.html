@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sass Projekt</title>
+    <meta name="description" content="Eine responsive Testseite mit Bootstrap, eigenen Sass-Stilen und Bootstrap Icons.">
+    <link rel="stylesheet" href="dist/css/style.css">
+  </head>
+  <body>
+    <header class="container py-4">
+      <nav class="d-flex flex-wrap justify-content-between align-items-center gap-3" aria-label="Hauptnavigation">
+        <a class="brand" href="#start"><i class="bi bi-asterisk" aria-hidden="true"></i> Studio Orange<span class="brand-dot">.</span></a>
+        <a class="nav-link" href="#bausteine">Die Bausteine <i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
+      </nav>
+    </header>
+
+    <main id="start">
+      <section class="container hero" aria-labelledby="hero-title">
+        <div class="row align-items-center gx-4 gy-5">
+          <div class="col-md-6">
+            <p class="eyebrow"><span class="status-dot"></span> Kleine Ideen. Große Möglichkeiten.</p>
+            <h1 id="hero-title">Gutes Design<br>beginnt mit<br><span>guten Bausteinen.</span></h1>
+            <p class="hero-copy">Ein flexibles Raster, eine eigene Farbe und die passenden Details. So bekommt deine nächste Idee ihren eigenen Auftritt.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-primary btn-lg" href="#bausteine">Entdecken <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i></a>
+              <a class="btn btn-outline-dark btn-lg" href="#spielraum">Buttons ansehen</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="showcase" aria-label="Gestaltungsbeispiel mit Raster, Symbol und eigener Farbe">
+              <div class="d-flex justify-content-between align-items-center showcase-top"><span>DEIN NÄCHSTES PROJEKT</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></div>
+              <div class="orbit" aria-hidden="true"><i class="bi bi-rocket-takeoff"></i><span class="orbit-star">✳</span></div>
+              <h2>Bereit für<br>den nächsten Start?</h2>
+              <div class="d-flex justify-content-between align-items-end mt-4"><span>Eine Idee.<br>Unendlich viele Möglichkeiten.</span><span class="sample-number">01 / 03</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bausteine" class="container section-space" aria-labelledby="blocks-title">
+        <div class="section-heading"><p class="eyebrow">DAS FUNDAMENT</p><h2 id="blocks-title">Drei Bausteine. Ein stimmiges Ganzes.</h2></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><article class="feature"><i class="bi bi-grid-1x2 feature-icon" aria-hidden="true"></i><span class="feature-number">01</span><h3>Passt sich an.</h3><p>Auf dem Smartphone untereinander, auf großen Bildschirmen nebeneinander. Das Bootstrap-Raster hält alles in Form.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="feature"><i class="bi bi-palette feature-icon" aria-hidden="true"></i><span class="feature-number">02</span><h3>Hat Charakter.</h3><p>Ein warmer Orangeton und eigene Sass-Stile geben den vertrauten Komponenten eine persönliche Note.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="feature"><i class="bi bi-lightning-charge feature-icon" aria-hidden="true"></i><span class="feature-number">03</span><h3>Zeigt die Details.</h3><p>Klare Symbole, gut lesbare Texte und großzügige Abstände machen die Seite übersichtlich und angenehm nutzbar.</p></article></div>
+        </div>
+      </section>
+
+      <section id="spielraum" class="container pb-5" aria-labelledby="buttons-title">
+        <div class="button-sample d-flex flex-wrap align-items-center justify-content-between gap-4">
+          <div><p class="eyebrow">KLEINER SPIELRAUM</p><h2 id="buttons-title">Ein Stil. Mehrere Möglichkeiten.</h2><p class="mb-0">Drei Button-Varianten zum Ausprobieren.</p></div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="#start"><i class="bi bi-arrow-up me-2" aria-hidden="true"></i>Zum Start</a>
+            <a class="btn btn-dark" href="#bausteine">Bausteine</a>
+            <a class="btn btn-outline-dark" href="#hero-title">Zur Idee</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container d-flex flex-wrap justify-content-between gap-2 py-4"><span>Studio Orange · Bootstrap &amp; Sass</span><span>Mit Neugier gebaut. Für alle Bildschirmgrößen.</span></footer>
+  </body>
+</html>
