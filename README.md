@@ -16,7 +16,7 @@ Die folgenden Befehle werden in PowerShell oder einem anderen Terminal ausgefüh
 2. Das Repository klonen und in den Projektordner wechseln:
 
    ```sh
-   git clone https://github.com/LucaSteindl/aufgabe-bootstrap-sass-.git bootstrap-sass-project
+   git clone https://github.com/LucaSteindl/aufgabe-bootstrap-sass.git bootstrap-sass-project
    cd bootstrap-sass-project
    ```
 
@@ -42,7 +42,7 @@ Die folgenden Befehle werden in PowerShell oder einem anderen Terminal ausgefüh
 
    BrowserSync öffnet normalerweise den Browser unter `http://localhost:3000`. Falls der Port belegt ist, die im Terminal ausgegebene lokale Adresse verwenden.
 
-Repository: [LucaSteindl/aufgabe-bootstrap-sass-](https://github.com/LucaSteindl/aufgabe-bootstrap-sass-)
+Repository: [LucaSteindl/aufgabe-bootstrap-sass](https://github.com/LucaSteindl/aufgabe-bootstrap-sass)
 
 ## Entwicklung und Befehle
 
